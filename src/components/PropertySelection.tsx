@@ -234,7 +234,13 @@ const PhoneInput: FC<PhoneInputProps> = ({ label }) => (
     <label className="text-sm mb-1 text-[#272B35]">{label}</label>
     <div className="flex">
       <span className="inline-flex items-center px-2 rounded-l border border-r-0 border-gray-300 bg-gray-50 text-[#272B35] text-sm space-x-1">
-  <img src="/bd.png" alt="Bangladesh" className="w-4 h-4" />
+  <Image
+  src="/bd.png"
+  alt="Bangladesh"
+  width={16}
+  height={16}
+  className="w-4 h-4"
+/>
   <span><svg
           className="w-3 h-3 text-gray-500"
           fill="none"

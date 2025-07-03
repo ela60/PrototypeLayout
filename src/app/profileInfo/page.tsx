@@ -34,7 +34,7 @@ const cards = [
 
 const PlanPage: NextPage = () => {
   const [selectedPlan, setSelectedPlan] = useState<PlanType>("Regular");
-  const [selectedCard, setSelectedCard] = useState<string>("1");
+ 
   const [showModal, setShowModal] = useState(false);
 
   const totalCharge =

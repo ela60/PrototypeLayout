@@ -1,14 +1,12 @@
 "use client";
 
-import React, { useState } from 'react';
+
 import { Search, Plus } from 'lucide-react';
 
-interface FormData {
-  [key: string]: string | string[];
-}
+
 
 const PropertyForm: React.FC = () => {
-  const [formData, setFormData] = useState<FormData>({});
+ 
 
   const FormRow = ({ 
     label, 
