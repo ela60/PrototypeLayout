@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { NextPage } from "next";
+import Image from "next/image";
 
 type PlanType = "Regular" | "Platinum" | "Enterprise";
 
@@ -44,7 +45,14 @@ const PlanPage: NextPage = () => {
       {/* Header */}
       <div className="flex justify-between items-center p-4 border-b border-[#E0E0E0]">
         <div className="flex items-center gap-2">
-          <img src="/logo.png" alt="RentYard Logo" className="h-6 w-auto" />
+           <div className="relative w-24 h-12">
+           <Image
+             src="/logo.png"
+             alt="RentYard Logo"
+             fill
+             className="object-contain" 
+           />
+         </div>
         </div>
         <button className="text-gray-600 hover:text-gray-800 rounded shadow px-4 py-2">
           Save & Exit

@@ -10,6 +10,7 @@ import {
   Briefcase,
   UploadCloud,
 } from "lucide-react";
+import Image from "next/image";
 
 export const PropertySelection: FC = () => {
   const [selectedRole, setSelectedRole] = useState<string | null>(null);
@@ -23,11 +24,15 @@ export const PropertySelection: FC = () => {
       {/* Header */}
       <div className="flex justify-between items-center p-4 border-b">
         <div className="flex items-center gap-2">
-          <img 
-            src="/logo.png" 
-            alt="RentYard Logo"
-            className="h-6 w-auto" 
-          />
+          <div className="relative w-24 h-12">
+  <Image
+    src="/logo.png"
+    alt="RentYard Logo"
+    fill
+    className="object-contain" 
+  />
+</div>
+
         </div>
         <button className="text-gray-500 hover:text-gray-700 rounded shadow px-4 py-2">
           Exit

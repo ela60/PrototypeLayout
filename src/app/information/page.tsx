@@ -4,6 +4,7 @@ import { useState } from "react";
 import { NextPage } from "next";
 import { Plus } from "lucide-react";
 import Modal from "@/components/Modal";
+import Image from "next/image";
 
 
 const CondoInfoPage: NextPage = () => {
@@ -76,11 +77,14 @@ const CondoInfoPage: NextPage = () => {
     <div className="min-h-screen bg-white p-6">
       <div className="flex justify-between items-center mb-6">
          <div className="flex items-center gap-2">
-          <img 
-            src="/logo.png" 
-            alt="RentYard Logo"
-            className="h-6 w-auto" 
-          />
+           <div className="relative w-24 h-12">
+           <Image
+             src="/logo.png"
+             alt="RentYard Logo"
+             fill
+             className="object-contain" 
+           />
+         </div>
         </div>
         <button className="text-gray-500 hover:text-gray-700 rounded shadow px-4 py-2">Save & Exit</button>
       </div>
